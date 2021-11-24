@@ -1,0 +1,37 @@
+name: 'peerlist-profile-action'
+description: 'Get dynamically generated peerlist.io profile overview on your readmes!'
+author: 'anuraghazra'
+
+inputs:
+  username:
+    required: true
+    description: 'Peerlist username'
+  card_size:
+    description: 'Card size (sm, md, lg) or any number'
+    default: 'lg'
+  theme_name:
+    description: 'Theme name'
+    default: 'default'
+  text_color:
+    description: 'Text color'
+  title_color:
+    description: 'Title color'
+  token:
+    required: true
+    description: 'Github access token'
+  bg_color:
+    description: 'Background color'
+  output_path:
+    default: 'images/peerlist-profile.png'
+    description: 'Output path to upload the image'
+  branch:
+    default: 'main'
+    description: 'Branch which you want to upload the image, change it depending on your main branch'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'user'
+  color: 'green'
