@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: browser-actions/setup-chrome@latest
-      - uses: 'anuraghazra/peerlist-profile-action@latest'
+      - uses: 'anuraghazra/peerlist-profile-action@master'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           username: 'anuraghazra' # your peerlist username

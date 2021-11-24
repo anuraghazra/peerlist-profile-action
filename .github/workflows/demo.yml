@@ -39,3 +39,5 @@ jobs:
           title_color: ${{github.event.inputs.title_color}}
           text_color: ${{github.event.inputs.text_color}}
           bg_color: ${{github.event.inputs.bg_color}}
+          branch: ${{github.event.inputs.branch}}
+          output_path: ${{github.event.inputs.output_path}}
